@@ -1,0 +1,12 @@
+.block {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-animation: blink 0.9s linear forwards;
+  animation: blink 0.9s linear forwards;
+}

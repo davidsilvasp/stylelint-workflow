@@ -1,0 +1,33 @@
+{
+    "plugins": [
+        "stylelint-declaration-strict-value",
+        "stylelint-no-unsupported-browser-features",
+        "stylelint-high-performance-animation"
+    ],
+    "rules": {
+        "plugin/no-low-performance-animation-properties": true,
+        "plugin/no-unsupported-browser-features": [
+            true,
+            {
+                "severity": "warning"
+            }
+        ],
+        "scale-unlimited/declaration-strict-value": [
+            [
+                "/color/",
+                "font-weight",
+                "font-size"
+            ],
+            {
+                "ignoreKeywords": [
+                    "currentColor",
+                    "transparent",
+                    "inherit",
+                    "unset",
+                    "initial"
+                ],
+                "message": "Você deve utilizar variáveis para esta propriedade."
+            }
+        ]
+    }
+}
